@@ -24,6 +24,7 @@
 <link href="css/font/stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="css/main.css" rel="stylesheet" type="text/css" />
 <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+<link href="css/rangeSlider.css" rel="stylesheet" type="text/css" />
 
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -1332,7 +1333,7 @@
 
 <div class="main_wrapper">
   
-  <div class="content_block">
+  <div class="product_block">
     <header>
       <div class="breadcrumbs">
         <p><a href="#">Home</a> / <a href="#">Ayaqqabıları</a> / <span>Kişi ayaqqabıları</span></p>
@@ -1351,7 +1352,14 @@
         </ul>
       </div>
     </header>
-    
+    <div class="product_header_mobile">
+      <h3>Ayyaqqabılar: İdman</h3>
+      <ul>
+        <li><a href="#" class="sort"><span>Çeşİdlə</span></a></li>
+        <li><a href="#" class="filtre"><span>Fİlter</span></a></li>
+      </ul>
+      <p>Tapılan məhsullar   1 026</p>
+    </div>
     <div class="product_list_wrapper">
       <aside class="aside_filter">
         <div class="aside_categories">
@@ -1371,6 +1379,17 @@
           </ul>
         </div>
         <div class="filters_block">
+          <section>
+            <h3><span>Qiymət aralığı</span></h3>
+            <div>
+              <input type="text" id="price_slider" name="" value="" />
+              <div class="price_form">
+                <input type="text" value="0">
+                <input type="text" value="5000">
+                <button type="submit">AXTAR</button>
+              </div>
+            </div>
+          </section>
           <section>
             <h3><span>Marka</span><a href="#">təmİzlə</a></h3>
             <div>
@@ -1719,6 +1738,12 @@
             </div>
           </article>
         </div>
+        <div class="more_products"><a href="#">Daha çox göstər</a></div>
+        <footer>
+          <span>Axtardığızı tapa bildinizmi?</span>
+          <a href="#">Bəli</a>
+          <a href="#">Xeyir</a>
+        </footer>
       </div>   
     </div>
 
@@ -1907,6 +1932,7 @@
 <script type="text/javascript" src="js/jquery-latest.js"></script>
 <script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
 <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 
