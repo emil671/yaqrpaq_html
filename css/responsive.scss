@@ -40,6 +40,10 @@
       .second {
         height: 43px;
         padding: 0 0 0 0;
+        > div {
+          height: 43px;
+          padding: 0 0 0 15px;
+        }
       }
     }
     h1.logo {
@@ -341,9 +345,14 @@
       width: 50%;
       border: 1px solid #f2f2f2;
       margin: 0;
+      padding: 0 15px;
       .image {
         height: 180px;
         line-height: 180px;
+      }
+      .old_price > span {
+        display: block;
+        padding: 0 0 5px;
       }
     }
     .more_products {
@@ -369,6 +378,9 @@
       }
       .second {
         padding: 0 0 0 15px;
+        > div {
+          padding: 0 0 0 15px;
+        }
       }
     }
     h1.logo {

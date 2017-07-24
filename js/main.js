@@ -220,19 +220,19 @@ setTimeout( function() {
 		}
 	});
 
-	$(".full_nav .left_side .categories_list ul li a").mouseover(function(){
+	$(".full_nav .left_side .categories_list ul li a, .full_nav .left_side .top_categories > ul > li > a").mouseover(function(){
 		if (_window.width() > 992) {
 			var _this = $(this),
-			_this_nav = _this.next().html();
+			_this_nav = _this.next().find(">*").html();
 
 			$(".full_nav .right_side").addClass("show_me");
-			$(".full_nav .right_side").html(_this_nav);
+			$(".full_nav .right_side nav").html(_this_nav);
 		}
 	});
 
 	$(".full_nav").mouseleave(function(){
 		$(".full_nav .right_side").removeClass("show_me");
-		$(".full_nav .right_side").html("");
+		$(".full_nav .right_side nav").html("");
 	});
 
 	$(document).on('mouseout', '.full_nav, .nav_trigger', function(){
@@ -503,3 +503,18 @@ _window.resize(function(){
     });
 
 /* Sort by end */
+
+
+/* Price slider begin */
+	$("#price_slider").ionRangeSlider({
+	    hide_min_max: true,
+	    keyboard: true,
+	    min: 0,
+	    max: 5000,
+	    from: 1000,
+	    to: 4000,
+	    type: 'double',
+	    step: 1,
+	    grid: true
+	});
+/* Price slider end */

@@ -16,6 +16,10 @@
     height: 43px;
     padding: 0 0 0 0;
   }
+  header#header .second > div {
+    height: 43px;
+    padding: 0 0 0 15px;
+  }
   h1.logo {
     width: 103px;
     padding: 0;
@@ -295,10 +299,15 @@
     width: 50%;
     border: 1px solid #f2f2f2;
     margin: 0;
+    padding: 0 15px;
   }
   .product_result_list article .image {
     height: 180px;
     line-height: 180px;
+  }
+  .product_result_list article .old_price > span {
+    display: block;
+    padding: 0 0 5px;
   }
   .more_products {
     height: 95px;
@@ -322,6 +331,9 @@
     display: none;
   }
   header#header .second {
+    padding: 0 0 0 15px;
+  }
+  header#header .second > div {
     padding: 0 0 0 15px;
   }
   h1.logo {

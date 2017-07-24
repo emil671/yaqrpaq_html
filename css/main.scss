@@ -387,6 +387,10 @@ a.search_toggler {
       &::-moz-placeholder {color:#8e857f;}/* Firefox 19+ */
       &:-moz-placeholder {color:#8e857f;}/* Firefox 18- */
       &:-ms-input-placeholder {color:#8e857f;}
+      &:focus + button + ul {
+        visibility: visible;
+        opacity: 1;
+      }
     }
     button {
       display: block;
@@ -405,6 +409,32 @@ a.search_toggler {
       right: 0;
       cursor: pointer;
       @include border_radius(0 4px 4px 0);
+    }
+    ul {
+      visibility: hidden;
+      opacity: 0;
+      width: 100%;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      -webkit-box-shadow:  0px 2px 2px 0px rgba(0,0,0,0.25);
+      -moz-box-shadow:  0px 2px 2px 0px rgba(0,0,0,0.25);
+      box-shadow:  0px 2px 2px 0px rgba(0,0,0,0.25);
+      @include animate_go(0.2s);
+      li {
+        a {
+          display: block;
+          padding: 12px 32px;
+          color: #666;
+          font-size: 14px;
+          text-decoration: none;
+          border-top: 1px solid #f2f2f2;
+          &:hover {
+            background: #f0f0f0;
+          }
+        }
+      }
     }
   }
 }
@@ -843,6 +873,11 @@ a.search_toggler {
           font-weight: 700;
           letter-spacing: 0.01px;
           text-transform: uppercase;
+          span {
+            strong {
+              font-family: 'JIS AZN';
+            }
+          }
         }
         .old_price {
           padding: 0 0 8px;
@@ -855,9 +890,17 @@ a.search_toggler {
             em {
               letter-spacing: -0.1px;
               text-decoration: line-through;
+              strong {
+                display: inline-block;
+                font-family: 'JIS AZN';
+                font-size: 24px;
+                position: relative;
+                top: 8px;
+                padding: 0 0 0 3px;
+              }
             }
           }
-          strong {
+          > strong {
             display: inline-block;
             height: 20px;
             padding: 0 6px;
@@ -1287,11 +1330,11 @@ a.search_toggler {
         letter-spacing: 0.01px;
         text-transform: uppercase;
       }
-      ul {
+      > ul {
         border-bottom: 1px solid #979797;
-        li {
+        > li {
           padding: 0 0 15px;
-          a {
+          > a {
             display: block;
             color: #686666;
             font-size: 16px;
@@ -1302,6 +1345,9 @@ a.search_toggler {
               vertical-align: middle;
               margin: 0 10px 0 0;
             }
+          }
+          > div {
+            display: none;
           }
         }
       }
@@ -1377,8 +1423,14 @@ a.search_toggler {
     width: 74%;
     float: right;
     background: #fafafa;
+    &.show_me {
+      .nav_banners {
+        display: block;
+      }
+    }
     nav {
       width: 100%;
+      padding: 0 240px 0 0;
       overflow: hidden;
       > div {
         width: 33.333333%;
@@ -1409,6 +1461,11 @@ a.search_toggler {
           ul {
             li {
               padding: 0 0 6px;
+              &:last-child {
+                a {
+                  color: #25a8ed;
+                }
+              }
               a {
                 text-decoration: none;
                 color: #666;
@@ -1425,6 +1482,13 @@ a.search_toggler {
       }
     }
   }
+}
+
+.nav_banners {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 10px;
 }
 
 a.toggler {
@@ -1729,7 +1793,7 @@ a.back_to_top {
   margin: 0 auto;
   padding: 0 15px;
   header {
-
+    overflow: hidden;
   }
 }
 
@@ -1785,7 +1849,40 @@ a.back_to_top {
 }
 
 .breadcrumbs {
-  padding: 10px 0 25px;
+  padding: 14px 0 25px;
+  ul {
+    overflow: hidden;
+    li {
+      float: left;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.02px;
+      color: #a4a4a4;
+      padding: 0 0 0 25px;
+      position: relative;
+      &:first-child {
+        padding: 0;
+        &::before {
+          display: none;
+        }
+      }
+      &::before {
+        content: "/";
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 10px;
+      }
+      a {
+        margin: 0 5px;
+        color: #191919;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
   p {
     font-size: 16px;
     font-weight: 400;
@@ -1806,6 +1903,7 @@ a.back_to_top {
 }
 
 .trend_searches {
+  width: 100500px;
   padding: 0 0 0 150px;
   overflow: hidden;
   position: relative;
@@ -1857,11 +1955,16 @@ aside.aside_filter {
   background: #fff;
   @include border_radius(1px);
   h3 {
-    padding: 0 0 20px;
-    color: #191919;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.02px;
+    padding: 0 0 8px;
+    margin: 0 0 15px;
+    border-bottom: 1px solid #eeeeee;
+    span {
+      padding: 0 20px 0 0;
+      color: #5a5a59;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.02px;
+    }
   }
   > ul {
     > li {
@@ -1939,6 +2042,7 @@ aside.aside_filter {
         letter-spacing: 0.02px;
       }
       a {
+        float: right;
         color: #e40046;
         font-size: 11px;
         font-weight: 400;
@@ -2213,7 +2317,7 @@ a.clear_filtre {
   article {
     width: 25%;
     height: 370px;
-    margin: 0 0 55px;
+    margin: 0 0 0px;
     padding: 0 20px;
     float: left;
     @include animate_go(0.2s);
@@ -2231,6 +2335,7 @@ a.clear_filtre {
         img {
           vertical-align: middle;
           max-width: 100%;
+          max-height: 90%;
         }
       }
     }
@@ -2253,6 +2358,11 @@ a.clear_filtre {
       font-weight: 700;
       letter-spacing: 0.01px;
       text-transform: uppercase;
+      span {
+        strong {
+          font-family: 'JIS AZN';
+        }
+      }
     }
     .old_price {
       padding: 0 0 8px;
@@ -2266,8 +2376,16 @@ a.clear_filtre {
           letter-spacing: -0.1px;
           text-decoration: line-through;
         }
+        strong {
+          display: inline-block;
+          font-family: 'JIS AZN';
+          font-size: 24px;
+          position: relative;
+          top: 8px;
+          padding: 0 0 0 3px;
+        }
       }
-      strong {
+      > strong {
         display: inline-block;
         height: 20px;
         padding: 0 6px;
