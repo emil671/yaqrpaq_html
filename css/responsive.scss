@@ -330,7 +330,56 @@
       padding: 0;
     }
     aside.aside_filter {
+      margin: 0;
+      float: none;
+      background: #fff;
+      position: fixed;
+      right: -100%;
+      top: 0;
+      z-index: 2;
+      @include animate_go(0.6s);
+      &.show_me {
+        right: 0;
+      }
+      footer {
+        display: block;
+      }
+      section {
+        margin: 0 0 9px;
+        padding: 0 0 9px;
+        border-bottom: 2px solid #e5e5e5;
+        h3 {
+          margin: 0;
+          padding: 0;
+          border: none;
+          span {
+            color: #363636;
+            font-family: 'Roboto';
+            font-size: 16px;
+            font-weight: 400;
+          }
+          a {
+            display: none;
+          }
+        }
+        > div {
+          padding: 15px 0 0;
+          > span {
+            display: none;
+          }
+        }     
+      }
+    }
+    header.mobile_header {
+      display: block;
+    }
+    .aside_categories {
       display: none;
+    }
+    .filters_block {
+      margin: 0;
+      padding: 15px 10px 10px;
+      overflow-y: auto;
     }
     .product_list {
       header {
@@ -585,7 +634,56 @@
       padding: 0;
     }
     aside.aside_filter {
+      margin: 0;
+      float: none;
+      background: #fff;
+      position: fixed;
+      right: -100%;
+      top: 0;
+      z-index: 2;
+      @include animate_go(0.6s);
+      &.show_me {
+        right: 0;
+      }
+      footer {
+        display: block;
+      }
+      section {
+        margin: 0 0 9px;
+        padding: 0 0 9px;
+        border-bottom: 2px solid #e5e5e5;
+        h3 {
+          margin: 0;
+          padding: 0;
+          border: none;
+          span {
+            color: #363636;
+            font-family: 'Roboto';
+            font-size: 16px;
+            font-weight: 400;
+          }
+          a {
+            display: none;
+          }
+        }
+        > div {
+          padding: 15px 0 0;
+          > span {
+            display: none;
+          }
+        }     
+      }
+    }
+    .aside_categories {
       display: none;
+    }
+    .filters_block {
+      margin: 0;
+      padding: 15px 10px 10px;
+      overflow-y: auto;
+    }
+    header.mobile_header {
+      display: block;
     }
     .product_list header {
       display: none;

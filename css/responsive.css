@@ -287,7 +287,61 @@
     padding: 0;
   }
   aside.aside_filter {
+    margin: 0;
+    float: none;
+    background: #fff;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    z-index: 2;
+    -webkit-animation-duration: 0.6s;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-animation-duration: 0.6s;
+    -moz-transition: all 0.6s ease-in-out;
+    animation-duration: 0.6s;
+    transition: all 0.6s ease-in-out;
+  }
+  aside.aside_filter.show_me {
+    right: 0;
+  }
+  aside.aside_filter footer {
+    display: block;
+  }
+  aside.aside_filter section {
+    margin: 0 0 9px;
+    padding: 0 0 9px;
+    border-bottom: 2px solid #e5e5e5;
+  }
+  aside.aside_filter section h3 {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  aside.aside_filter section h3 span {
+    color: #363636;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+  }
+  aside.aside_filter section h3 a {
     display: none;
+  }
+  aside.aside_filter section > div {
+    padding: 15px 0 0;
+  }
+  aside.aside_filter section > div > span {
+    display: none;
+  }
+  header.mobile_header {
+    display: block;
+  }
+  .aside_categories {
+    display: none;
+  }
+  .filters_block {
+    margin: 0;
+    padding: 15px 10px 10px;
+    overflow-y: auto;
   }
   .product_list header {
     display: none;
@@ -524,7 +578,61 @@
     padding: 0;
   }
   aside.aside_filter {
+    margin: 0;
+    float: none;
+    background: #fff;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    z-index: 2;
+    -webkit-animation-duration: 0.6s;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-animation-duration: 0.6s;
+    -moz-transition: all 0.6s ease-in-out;
+    animation-duration: 0.6s;
+    transition: all 0.6s ease-in-out;
+  }
+  aside.aside_filter.show_me {
+    right: 0;
+  }
+  aside.aside_filter footer {
+    display: block;
+  }
+  aside.aside_filter section {
+    margin: 0 0 9px;
+    padding: 0 0 9px;
+    border-bottom: 2px solid #e5e5e5;
+  }
+  aside.aside_filter section h3 {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  aside.aside_filter section h3 span {
+    color: #363636;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+  }
+  aside.aside_filter section h3 a {
     display: none;
+  }
+  aside.aside_filter section > div {
+    padding: 15px 0 0;
+  }
+  aside.aside_filter section > div > span {
+    display: none;
+  }
+  .aside_categories {
+    display: none;
+  }
+  .filters_block {
+    margin: 0;
+    padding: 15px 10px 10px;
+    overflow-y: auto;
+  }
+  header.mobile_header {
+    display: block;
   }
   .product_list header {
     display: none;

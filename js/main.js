@@ -518,3 +518,22 @@ _window.resize(function(){
 	    grid: true
 	});
 /* Price slider end */
+
+
+/* Filtre mobile begin */
+	
+	$(".product_header_mobile a.filtre").click(function(){
+		$("aside.aside_filter, .darkness").addClass("show_me");
+		$("body").addClass("overflow");
+		$(".filters_block").css("height", (_window.height()-105)+"px");
+		return false;
+	});
+	
+	$("aside.aside_filter footer a").click(function(){
+		$("aside.aside_filter, .darkness").removeClass("show_me");
+		$("body").removeClass("overflow");
+		$(".filters_block").css("height", (_window.height()-105)+"px");
+		return false;
+	});
+
+/* Filtre mobile end */

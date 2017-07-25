@@ -2379,6 +2379,52 @@ aside.aside_filter {
   margin: 0 0 0 -285px;
 }
 
+aside.aside_filter footer {
+  display: none;
+  padding: 8px 10px;
+}
+
+aside.aside_filter footer a {
+  display: block;
+  height: 36px;
+  background: #609420;
+  color: #fff;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+
+header.mobile_header {
+  padding: 12px;
+  border-bottom: 12px solid #f2f2f2;
+  overflow: hidden;
+}
+
+header.mobile_header h3 {
+  float: left;
+  color: #363636;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header.mobile_header a {
+  float: right;
+  color: #e40046;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 .aside_categories {
   padding: 35px 20px 0px;
   background: #fff;
@@ -2577,8 +2623,12 @@ ul.checkboxes li label strong {
 
 .product_list_wrapper {
   padding: 0 0 0 285px;
-  overflow: hidden;
-  position: relative;
+}
+
+.product_list_wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .product_list {
