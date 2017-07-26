@@ -244,7 +244,8 @@ header#header .first > div .phone a {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -0.7px;
-  background: url(../img/phone_white_icon.svg) no-repeat 0 50%;
+  background: url(../img/phone_white_icon.svg) no-repeat 0 48%;
+  background-size: 12px;
 }
 
 header#header .first > div .phone a:hover {
@@ -279,7 +280,7 @@ h1.logo a {
   display: block;
   width: 160px;
   height: 75px;
-  background: url(../img/logo.svg) no-repeat 0 50%;
+  background: url(../img/logo.svg) no-repeat 0 55%;
 }
 
 a.search_toggler {
@@ -1505,6 +1506,21 @@ a.search_toggler {
   font-weight: 400;
   letter-spacing: 0.01px;
   text-transform: uppercase;
+}
+
+.credit_cards {
+  overflow: hidden;
+}
+
+.credit_cards a {
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.credit_cards a img {
+  display: block;
+  height: 26px;
 }
 
 .social_icons {
