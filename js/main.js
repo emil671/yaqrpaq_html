@@ -537,3 +537,51 @@ _window.resize(function(){
 	});
 
 /* Filtre mobile end */
+
+
+/* Product gallery begin */
+
+$(".priduct_gallery .thumbnails li a").click(function(){
+        var  _this = $(this),
+        src = _this.attr("href"),
+        _this_index = _this.parent().index(),
+        previous = $(".priduct_gallery .thumbnails li a.active").parent().index();
+        if (_this.hasClass("active")) {} else {
+            $(".priduct_gallery .thumbnails li a").removeClass("active");
+            _this.addClass("active");
+            if (_this_index > previous) {
+                $(".priduct_gallery .image").append("<div style='left: "+$(".priduct_gallery").width()+"px'><img src='"+src+"' alt='' /></div>");
+            } else {
+                $(".priduct_gallery .image").append("<div style='left: -"+$(".priduct_gallery").width()+"px'><img src='"+src+"' alt='' /></div>");
+            }
+
+            $(".priduct_gallery .image > div + div img").load(function(){
+                $(".priduct_gallery .image > div + div").css("left", "0");
+                if (_this_index > previous) {
+                    $(".priduct_gallery .image > div:first-child").css("left", "-100%");
+                } else {
+                    $(".priduct_gallery .image > div:first-child").css("left", "100%");
+                }
+                setTimeout(function(){
+                    $(".priduct_gallery .image > div:first-child").remove();
+                }, 300);
+            });            
+        }
+        return false;
+    });
+
+/* Product gallery end */
+
+
+/* Product tabs begin */
+
+	$(".product_infos .tabs ul li a").click(function(){
+		var _this = $(this),
+		_this_index = _this.parent().index();
+		$(".product_infos .tabs ul li a").removeClass("active");
+		_this.addClass("active");
+		$(".product_infos .inner > div").removeClass("active").eq(_this_index).addClass("active");
+		return false;
+	});
+
+/* Product tabs end */
