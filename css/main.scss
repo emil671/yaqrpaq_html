@@ -1847,6 +1847,7 @@ a.back_to_top {
     img {
       display: inline-block;
       vertical-align: middle;
+      max-width: 100%;
     }
   }
   .thumbnails {
@@ -1864,6 +1865,7 @@ a.back_to_top {
           border: 1px solid #ddd;
           line-height: 58px;
           text-align: center;
+          background: #fff;
           &:hover, &.active {
             border-color: #999;
           }

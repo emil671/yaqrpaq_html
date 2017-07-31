@@ -2266,6 +2266,7 @@ a.back_to_top.show_me {
 .priduct_gallery .image img {
   display: inline-block;
   vertical-align: middle;
+  max-width: 100%;
 }
 
 .priduct_gallery .thumbnails {
@@ -2286,6 +2287,7 @@ a.back_to_top.show_me {
   border: 1px solid #ddd;
   line-height: 58px;
   text-align: center;
+  background: #fff;
 }
 
 .priduct_gallery .thumbnails ul li a:hover, .priduct_gallery .thumbnails ul li a.active {
