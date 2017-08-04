@@ -2414,12 +2414,12 @@ a.back_to_top.show_me {
   text-transform: uppercase;
 }
 
-.main_side {
+.basket_wrapper .main_side {
   width: 640px;
   float: left;
 }
 
-.right_side {
+.basket_wrapper .right_side {
   width: 400px;
   float: right;
 }
@@ -3131,10 +3131,13 @@ a.back_to_top.show_me {
   border: 1px solid #d3d3d3;
   line-height: 178px;
   text-align: center;
+  font-size: 0;
 }
 
 .basket_list article .image a img {
   vertical-align: middle;
+  max-width: 99%;
+  max-height: 99%;
 }
 
 .basket_list article .inner .price {
@@ -3199,6 +3202,7 @@ a.back_to_top.show_me {
   padding: 0 12px 0 0;
   border-right: 1px solid #dfdfdf;
   position: relative;
+  z-index: 1;
 }
 
 .color_select:hover ul {
@@ -3298,6 +3302,7 @@ a.back_to_top.show_me {
   margin: 0 0 0 18px;
   border-right: 1px solid #dfdfdf;
   position: relative;
+  z-index: 1;
 }
 
 .size_select:hover ul {
@@ -3956,10 +3961,13 @@ a.back_to_top.show_me {
   line-height: 140px;
   text-align: center;
   background: #fff;
+  font-size: 0;
 }
 
 .right_basket_list article .image a img {
   vertical-align: middle;
+  max-width: 98%;
+  max-height: 98%;
 }
 
 .right_basket_list article .inner {

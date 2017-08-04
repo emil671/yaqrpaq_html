@@ -1978,17 +1978,17 @@ a.back_to_top {
     letter-spacing: -0.7px;
     text-transform: uppercase;
   }
+  .main_side {
+    width: 640px;
+    float: left;
+  }
+  .right_side {
+    width: 400px;
+    float: right;
+  }
 }
 
-.main_side {
-  width: 640px;
-  float: left;
-}
 
-.right_side {
-  width: 400px;
-  float: right;
-}
 
 .shipping_address {
   background: #fff;
@@ -2603,8 +2603,11 @@ a.back_to_top {
         border: 1px solid #d3d3d3;
         line-height: 178px;
         text-align: center;
+        font-size: 0;
         img {
           vertical-align: middle;
+          max-width: 99%;
+          max-height: 99%;
         }
       }
     }
@@ -2665,6 +2668,7 @@ a.back_to_top {
   padding: 0 12px 0 0;
   border-right: 1px solid #dfdfdf;
   position: relative;
+  z-index: 1;
   &:hover {
     ul {
       display: block;
@@ -2750,6 +2754,7 @@ a.back_to_top {
   margin: 0 0 0 18px;
   border-right: 1px solid #dfdfdf;
   position: relative;
+  z-index: 1;
   &:hover {
     ul {
       display: block;
@@ -3332,8 +3337,11 @@ a.back_to_top {
         line-height: 140px;
         text-align: center;
         background: #fff;
+        font-size: 0;
         img {
           vertical-align: middle;
+          max-width: 98%;
+          max-height: 98%;
         }
       }
     }
