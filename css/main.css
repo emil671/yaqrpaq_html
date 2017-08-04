@@ -4300,6 +4300,153 @@ a.back_to_top.show_me {
   font-size: 15px;
 }
 
+.favorites_block {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 15px 60px;
+}
+
+.favorites_block h2 {
+  text-align: center;
+  padding: 0 0 55px;
+  color: #363636;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.02px;
+  text-transform: uppercase;
+}
+
+.favorites_list {
+  padding: 40px 0;
+  background: #fff;
+}
+
+.favorites_list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.favorites_list article {
+  width: 16.666666%;
+  height: 450px;
+  margin: 0 0 0px;
+  padding: 0 20px;
+  float: left;
+  -webkit-animation-duration: 0.2s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-animation-duration: 0.2s;
+  -moz-transition: all 0.2s ease-in-out;
+  animation-duration: 0.2s;
+  transition: all 0.2s ease-in-out;
+}
+
+.favorites_list article:hover {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.favorites_list article .image {
+  width: 100%;
+  height: 220px;
+  line-height: 220px;
+  text-align: center;
+}
+
+.favorites_list article .image a img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 90%;
+}
+
+.favorites_list article h3 {
+  padding: 0 0 20px;
+  color: #666;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0.01px;
+}
+
+.favorites_list article h3 a {
+  color: #666;
+  text-decoration: none;
+}
+
+.favorites_list article .price {
+  padding: 0 0 7px;
+  color: #242424;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.01px;
+  text-transform: uppercase;
+}
+
+.favorites_list article .price span strong {
+  font-family: 'JIS AZN';
+}
+
+.favorites_list article .old_price {
+  padding: 0 0 8px;
+}
+
+.favorites_list article .old_price span {
+  padding: 0 20px 0 0;
+  color: #7b7b7b;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.09px;
+}
+
+.favorites_list article .old_price span em {
+  letter-spacing: -0.1px;
+  text-decoration: line-through;
+}
+
+.favorites_list article .old_price span strong {
+  display: inline-block;
+  font-family: 'JIS AZN';
+  font-size: 24px;
+  position: relative;
+  top: 8px;
+  padding: 0 0 0 3px;
+}
+
+.favorites_list article .old_price > strong {
+  display: inline-block;
+  height: 20px;
+  padding: 0 6px;
+  line-height: 20px;
+  border: 1px solid #ff5353;
+  color: #fc3942;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.02px;
+  text-transform: uppercase;
+}
+
+.favorites_list article .buy {
+  padding: 40px 0 0;
+}
+
+.favorites_list article .buy a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01px;
+  text-decoration: none;
+  background: #79b237;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+
 aside.aside_products {
   width: 225px;
   position: absolute;
