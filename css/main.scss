@@ -2280,6 +2280,258 @@ a.back_to_top {
   }
 }
 
+.shipping_address_edit {
+  padding: 25px 35px;
+  margin: 0 0 10px;
+  background: #fff;
+  h3 {
+    padding: 0 0 40px;
+    color: #363636;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1.31px;
+    text-transform: uppercase;
+  }
+  .list {
+    ul {
+      li {
+        padding: 0 0 30px;
+        margin: 0 0 30px;
+        border-bottom: 2px solid #eee;
+        label {
+          display: block;
+          padding: 0 200px 0 0;
+          position: relative;
+          span {
+            display: block;
+            padding: 0 0 10px;
+            font-size: 15px;
+            line-height: 24px;
+            color: #363636;
+          }
+          input {
+            display: none;
+            &:checked + em::after {
+              display: block;
+            }
+            & + em {
+              display: block;
+              width: 22px;
+              height: 22px;
+              border: 1px solid #ababab;
+              position: absolute;
+              top: 0;
+              right: 35px;
+              @include border_radius(50%);
+              &::after {
+                content: "";
+                display: none;
+                width: 8px;
+                height: 8px;
+                background: #2e2e2e;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -4px 0 0 -4px;
+                @include border_radius(50%);
+              }
+            }
+          }
+          strong {
+            display: block;
+            padding: 0 0 30px;
+            color: #ff5656;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1.23px;
+          }
+          a {
+            color: #363636;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 1.03px;
+            text-decoration: underline;
+            text-transform: uppercase;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    padding: 0 0 20px;
+    overflow: hidden;
+    .add_new {
+      float: left;
+      a {
+        display: block;
+        height: 54px;
+        line-height: 54px;
+        padding: 0 20px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 1.51px;
+        text-transform: uppercase;
+        background: #333;
+        text-decoration: none;
+      }
+    }
+    .cancel {
+      float: right;
+      padding: 10px 0 0;
+      a {
+        display: block;
+        height: 34px;
+        padding: 0 20px;
+        line-height: 34px;
+        color: #000000;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 1.51px;
+        text-transform: uppercase;
+        background: #eee;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.address_form {
+  padding: 30px 35px;
+  margin: 0 0 10px;
+  background: #fff;
+  h3 {
+    padding: 0 0 23px;
+    color: #363636;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1.31px;
+    text-transform: uppercase;
+  }
+  h4 {
+    padding: 0 0 20px;
+    color: #363636;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+  }
+  form {
+    display: block;
+    max-width: 375px;
+    ul {
+      li {
+        padding: 0 0 20px;
+        div {
+          padding: 0 0 8px;
+          overflow: hidden;
+          span {
+            float: left;
+            color: #999999;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1.1px;
+            text-transform: uppercase;
+          }
+          sub {
+            color: #999;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.97px;
+          }
+          em {
+            float: right;
+            color: #ff0000;
+            font-size: 11px;
+            font-weight: 400;
+            letter-spacing: 0.97px;
+            padding: 5px 0 0;
+          }
+        }
+        input {
+          display: block;
+          width: 100%;
+          height: 50px;
+          padding: 0 12px;
+          border: 1px solid #4a4a4a;
+          color: #363636;
+          font-family: "Roboto Condensed";
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: 1.1px;
+          background: #fff;
+          @include border_radius(1px);
+          & + input {
+            margin: 12px 0 0;
+          }
+          &:disabled {
+            color: #c6c6c6;
+          }
+        }
+        strong {
+          display: block;
+          padding: 4px 0 0;
+          color: #ff0000;
+          font-size: 11px;
+          font-weight: 400;
+          letter-spacing: 0.97px;
+        }
+      }
+    }
+    .submit {
+      padding: 0 0 28px;
+      button {
+        height: 46px;
+        padding: 0 20px;
+        border: none;
+        color: #ffffff;
+        font-family: "Roboto Condensed";
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 1.51px;
+        text-transform: uppercase;
+        background: #333;
+        cursor: pointer;
+      }
+    }
+    .link {
+      a {
+        color: #999;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 1.23px;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.promo_codes {
+  background: #fff;
+  margin: 0 0 10px;
+  > a {
+    display: block;
+    padding: 32px 35px;
+    color: #363636;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.41px;
+    text-decoration: none;
+    background: url(../img/select_arrow_big.png) no-repeat 95% 50%;
+  }
+  > div {
+    padding: 15px 35px;
+    display: none;
+  }
+}
+
 .basket_items {
   padding: 15px 25px;
   background: #fff;
