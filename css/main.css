@@ -2424,6 +2424,345 @@ a.back_to_top.show_me {
   float: right;
 }
 
+.shipping_address {
+  background: #fff;
+  padding: 25px 35px;
+  margin: 0 0 15px;
+  position: relative;
+}
+
+.shipping_address h3 {
+  padding: 0 0 40px;
+  color: #363636;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 1.31px;
+  text-transform: uppercase;
+}
+
+.shipping_address .text {
+  font-size: 15px;
+  line-height: 24px;
+  color: #363636;
+}
+
+.shipping_address .change {
+  position: absolute;
+  top: 85px;
+  right: 35px;
+}
+
+.shipping_address .change a {
+  display: block;
+  width: 135px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1.51px;
+  background: #eee;
+}
+
+.delivery_methods {
+  padding: 25px 35px;
+  margin: 0 0 15px;
+  background: #fff;
+}
+
+.delivery_methods h3 {
+  padding: 0 0 35px;
+  color: #363636;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 1.31px;
+  text-transform: uppercase;
+}
+
+.delivery_methods ul li {
+  padding: 0 0 20px;
+  margin: 0 0 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.delivery_methods ul li p {
+  padding: 0 0 12px;
+  color: #666;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.81px;
+}
+
+.delivery_methods ul li label {
+  display: block;
+  padding: 0 100px 0 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.delivery_methods ul li label span {
+  color: #999999;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.41px;
+  line-height: 25px;
+}
+
+.delivery_methods ul li label input {
+  display: none;
+}
+
+.delivery_methods ul li label input:checked + em::after {
+  display: block;
+}
+
+.delivery_methods ul li label input + em {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #ababab;
+  position: absolute;
+  top: 0;
+  right: 35px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.delivery_methods ul li label input + em::after {
+  content: "";
+  display: none;
+  width: 8px;
+  height: 8px;
+  background: #2e2e2e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -4px 0 0 -4px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.payment_methods {
+  background: #fff;
+}
+
+.payment_methods header {
+  padding: 22px 35px 0;
+}
+
+.payment_methods header h3 {
+  padding: 0 0 20px;
+  border-bottom: 2px solid #eee;
+  color: #363636;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 1.31px;
+  text-transform: uppercase;
+}
+
+.payment_methods footer {
+  padding: 25px 35px;
+  background: #f9f9f9;
+}
+
+.payment_methods footer p {
+  display: inline-block;
+  padding: 2px 20px 0 0;
+  color: #2d2d2d;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02px;
+  text-transform: uppercase;
+}
+
+.payment_methods footer img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.methods_list {
+  padding: 25px 35px 0;
+}
+
+.methods_list h4 {
+  padding: 0 0 15px;
+  color: #363636;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 1.31px;
+  text-transform: uppercase;
+}
+
+.methods_list ul li {
+  overflow: hidden;
+  padding: 0 0 15px;
+}
+
+.methods_list ul li.active > div {
+  display: block;
+}
+
+.methods_list ul li label {
+  width: 240px;
+  float: left;
+  position: relative;
+}
+
+.methods_list ul li label .image {
+  float: left;
+  padding: 0 15px 0 0;
+}
+
+.methods_list ul li label span {
+  float: left;
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.41px;
+  line-height: 30px;
+}
+
+.methods_list ul li label input {
+  display: none;
+}
+
+.methods_list ul li label input:checked + em::after {
+  display: block;
+}
+
+.methods_list ul li label input + em {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ababab;
+  position: absolute;
+  top: 4px;
+  right: 35px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.methods_list ul li label input + em::after {
+  content: "";
+  display: none;
+  width: 8px;
+  height: 8px;
+  background: #2e2e2e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -4px 0 0 -4px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.methods_list ul li > div {
+  display: none;
+  width: auto;
+  float: left;
+  padding: 0 0 0 70px;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.methods_list ul li > div a {
+  display: inline-block;
+  width: 80px;
+  height: 31px;
+  vertical-align: middle;
+  margin: 0 6px 0 0;
+  text-align: center;
+  line-height: 31px;
+  color: #808080;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.7px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ebebeb;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.methods_list ul li > div a.active {
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  background: #707070;
+  position: relative;
+}
+
+.methods_list ul li > div a.active::after {
+  content: "";
+  display: block;
+  width: 76px;
+  height: 31px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border: 1px solid #fff;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.payment_checkout {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px 0 0;
+}
+
+.payment_checkout .button {
+  padding: 0 0 8px;
+}
+
+.payment_checkout .button a {
+  display: block;
+  height: 53px;
+  line-height: 53px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #79b237;
+}
+
+.payment_checkout p {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.41px;
+  line-height: 28px;
+}
+
+.payment_checkout p a {
+  color: #757575;
+  text-decoration: underline;
+}
+
+.payment_checkout p a:hover {
+  text-decoration: none;
+}
+
 .basket_items {
   padding: 15px 25px;
   background: #fff;

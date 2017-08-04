@@ -585,3 +585,18 @@ $(".priduct_gallery .thumbnails li a").click(function(){
 	});
 
 /* Product tabs end */
+
+
+/* Payment select begin */
+
+	$(".methods_list ul li label input").change(function(){
+		$(".methods_list ul li").removeClass("active").eq($(".methods_list ul li label input:checked").parent().parent().index()).addClass("active");
+	});
+
+	$(".methods_list ul li > div a").click(function(){
+		$(this).parent().find("a").removeClass("active");
+		$(this).addClass("active");
+		return false;
+	});
+
+/* Payment select end */
