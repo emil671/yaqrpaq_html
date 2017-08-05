@@ -1892,24 +1892,60 @@ a.back_to_top {
       font-weight: 400;
       letter-spacing: -1.17px;
     }
-    .rating {
-      float: left;
-      margin: 0 36px 0 0;
-    }
-    p {
-      padding: 2px 0 0;
-      font-family: "Roboto Condensed";
-      font-size: 14px;
-      letter-spacing: 0.01px;
-      color: #a4a4a4;
-      font-weight: 400;
-      span {
-        padding: 0 15px;
-        color: #2296e8;
-        font-weight: 400;
+    .first_info {
+      overflow: hidden;
+      padding: 0 0 15px;
+      .rating {
+        float: left;
+        margin: 0 36px 0 0;
       }
-      strong {
-        font-weight: 700;
+      p {
+        padding: 2px 0 0;
+        font-family: "Roboto Condensed";
+        font-size: 14px;
+        letter-spacing: 0.01px;
+        color: #a4a4a4;
+        font-weight: 400;
+        span {
+          padding: 0 15px;
+          color: #2296e8;
+          font-weight: 400;
+        }
+        strong {
+          font-weight: 700;
+        }
+      }      
+    }
+    .second_info {
+      overflow: hidden;
+      .mega_seller {
+        float: left;
+      }
+      .wrap_store {
+        float: left;
+        padding: 0 0 0 12px;
+        margin: 0 0 0 15px;
+        font-size: 15px;
+        line-height: 36px;
+        letter-spacing: 0.02px;
+        color: #558e1c;
+        font-weight: 400;
+        position: relative;
+        &::before {
+          content: "|";
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: #ababab;
+          font-weight: 400;
+        }
+        strong {
+          font-weight: bold;
+        }
+        a {
+          color: #558e1c;
+        }
       }
     }
   }
@@ -2144,6 +2180,7 @@ a.back_to_top {
   }
   ul {
     li {
+      min-height: 50px;
       overflow: hidden;
       padding: 0 0 15px;
       &.active {
@@ -3920,6 +3957,9 @@ aside.aside_products {
         &::before {
           display: none;
         }
+        a {
+          margin: 0 5px 0 0; 
+        }
       }
       &::before {
         content: "/";
@@ -3970,7 +4010,7 @@ aside.aside_products {
     line-height: 30px;
     font-weight: 400;
     letter-spacing: 0.02px;
-    background: url(../img/search_small_icon.svg) no-repeat 0 50%;
+    background: url(../img/search_small_icon.svg) no-repeat 6px 50%;
     position: absolute;
     top: 0;
     left: 0;
@@ -4023,7 +4063,7 @@ aside.aside_filter {
 }
 
 header.mobile_header {
-  padding: 12px;
+  padding: 12px 12px 12px 0;
   border-bottom: 12px solid #f2f2f2;
   overflow: hidden;
   h3 {
@@ -4045,7 +4085,7 @@ header.mobile_header {
 }
 
 .aside_categories {
-  padding: 35px 20px 0px;
+  padding: 15px 20px 0px;
   background: #fff;
   @include border_radius(1px);
   h3 {
@@ -4538,6 +4578,7 @@ a.clear_filtre {
 
 .more_products {
   height: 75px;
+  padding: 15px 0 0;
   text-align: center;
   clear: both;
   a {
@@ -4555,4 +4596,8 @@ a.clear_filtre {
     text-decoration: none;
     @include border_radius(4px);
   }
+}
+
+.currency_icon {
+  font-family: 'JIS AZN';
 }

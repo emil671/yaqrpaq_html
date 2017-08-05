@@ -2314,12 +2314,17 @@ a.back_to_top.show_me {
   letter-spacing: -1.17px;
 }
 
-.product_first header .rating {
+.product_first header .first_info {
+  overflow: hidden;
+  padding: 0 0 15px;
+}
+
+.product_first header .first_info .rating {
   float: left;
   margin: 0 36px 0 0;
 }
 
-.product_first header p {
+.product_first header .first_info p {
   padding: 2px 0 0;
   font-family: "Roboto Condensed";
   font-size: 14px;
@@ -2328,14 +2333,52 @@ a.back_to_top.show_me {
   font-weight: 400;
 }
 
-.product_first header p span {
+.product_first header .first_info p span {
   padding: 0 15px;
   color: #2296e8;
   font-weight: 400;
 }
 
-.product_first header p strong {
+.product_first header .first_info p strong {
   font-weight: 700;
+}
+
+.product_first header .second_info {
+  overflow: hidden;
+}
+
+.product_first header .second_info .mega_seller {
+  float: left;
+}
+
+.product_first header .second_info .wrap_store {
+  float: left;
+  padding: 0 0 0 12px;
+  margin: 0 0 0 15px;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: 0.02px;
+  color: #558e1c;
+  font-weight: 400;
+  position: relative;
+}
+
+.product_first header .second_info .wrap_store::before {
+  content: "|";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ababab;
+  font-weight: 400;
+}
+
+.product_first header .second_info .wrap_store strong {
+  font-weight: bold;
+}
+
+.product_first header .second_info .wrap_store a {
+  color: #558e1c;
 }
 
 .product_first_info {
@@ -2602,6 +2645,7 @@ a.back_to_top.show_me {
 }
 
 .methods_list ul li {
+  min-height: 50px;
   overflow: hidden;
   padding: 0 0 15px;
 }
@@ -4645,6 +4689,10 @@ aside.aside_products article .old_price > strong {
   display: none;
 }
 
+.breadcrumbs ul li:first-child a {
+  margin: 0 5px 0 0;
+}
+
 .breadcrumbs ul li::before {
   content: "/";
   display: block;
@@ -4699,7 +4747,7 @@ aside.aside_products article .old_price > strong {
   line-height: 30px;
   font-weight: 400;
   letter-spacing: 0.02px;
-  background: url(../img/search_small_icon.svg) no-repeat 0 50%;
+  background: url(../img/search_small_icon.svg) no-repeat 6px 50%;
   position: absolute;
   top: 0;
   left: 0;
@@ -4760,7 +4808,7 @@ aside.aside_filter footer a {
 }
 
 header.mobile_header {
-  padding: 12px;
+  padding: 12px 12px 12px 0;
   border-bottom: 12px solid #f2f2f2;
   overflow: hidden;
 }
@@ -4784,7 +4832,7 @@ header.mobile_header a {
 }
 
 .aside_categories {
-  padding: 35px 20px 0px;
+  padding: 15px 20px 0px;
   background: #fff;
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
@@ -5356,6 +5404,7 @@ a.clear_filtre {
 
 .more_products {
   height: 75px;
+  padding: 15px 0 0;
   text-align: center;
   clear: both;
 }
@@ -5377,4 +5426,8 @@ a.clear_filtre {
   -webkit-border-radius: 4px;
   -khtml-border-radius: 4px;
   border-radius: 4px;
+}
+
+.currency_icon {
+  font-family: 'JIS AZN';
 }

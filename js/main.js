@@ -600,3 +600,23 @@ $(".priduct_gallery .thumbnails li a").click(function(){
 	});
 
 /* Payment select end */
+
+/* Size select begin */
+	$(".size_select ul li a").click(function(){
+		var _this_name = $(this).text();
+		$(this).parent().parent().find("a").removeClass("active");
+		$(this).addClass("active");
+		$(this).parent().parent().prev().find("em").html(_this_name);
+		return false;
+	});
+/* Size select end */
+
+/* Color select begin */
+	$(".color_select ul li a").click(function(){
+		var _this_style = $(this).find("em").attr("style");
+		$(this).parent().parent().find("a").removeClass("active");
+		$(this).addClass("active");
+		$(this).parent().parent().prev().find("em").attr("style", _this_style);
+		return false;
+	});
+/* Color select end */

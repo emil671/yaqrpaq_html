@@ -527,6 +527,11 @@
     height: 100px;
     line-height: 98px;
   }
+  .methods_list ul li > div {
+    float: none;
+    clear: both;
+    padding: 5px 0 0;
+  }
   /* Basket end */
 }
 
@@ -859,6 +864,11 @@
   .basket_total {
     padding: 15px;
   }
+  .methods_list ul li > div {
+    float: none;
+    clear: both;
+    padding: 5px 0 0;
+  }
   /* Basket end */
 }
 
@@ -1117,6 +1127,11 @@
   .count_select {
     padding: 10px 0 0;
     clear: both;
+  }
+  .methods_list ul li > div {
+    float: none;
+    clear: both;
+    padding: 5px 0 0;
   }
   /* Basket end */
 }
