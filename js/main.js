@@ -469,6 +469,28 @@ _window.resize(function(){
 
 /* Sign in modal end */
 
+/* Comment modal begin */
+
+	$(".open_comment_modal").click(function(){
+		$("body").addClass("overflow");
+		$(".darkness").addClass("show_me");
+		setTimeout(function(){
+			$(".comment_modal").addClass("show_me");
+		}, 300);
+		return false;
+	});
+
+	$(".comment_modal a.close").click(function(){
+		$("body").removeClass("overflow");
+		$(".comment_modal").removeClass("show_me");
+		setTimeout(function(){
+			$(".darkness").removeClass("show_me");
+		}, 300);
+		return false;
+	});
+
+/* Comment modal end */
+
 
 /* Scroll up begin */
     $("a.back_to_top").click(function(){

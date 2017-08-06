@@ -8,7 +8,7 @@
 
 
 
-<title>Yarpaq - Account edit</title>
+<title>Yarpaq - Add new payment method</title>
 
 <meta property="og:title" content="The Rock" />
 <meta property="og:type" content="video.movie" />
@@ -1772,34 +1772,54 @@
 
 <div class="main_wrapper">
   <main>
-    <div class="account_edit">
+    <div class="add_payment_method">
       <div>
-        <h2>MY ACCOUNT</h2>
+        <h2>ADD PAYMENT DETAILS</h2>
         <div class="form">
           <form action="simple.php">
+            <div class="cards_select">
+              <label>
+                <img src="img/card_visa.svg" alt="">
+                <input type="radio" name="card_type">
+                <em></em>
+              </label>
+              <label>
+                <img src="img/card_master.svg" alt="">
+                <input type="radio" name="card_type">
+                <em></em>
+              </label>
+              <label>
+                <img src="img/card_paypal.svg" alt="">
+                <input type="radio" name="card_type">
+                <em></em>
+              </label>
+              <label>
+                <img src="img/card_bolcard.svg" alt="">
+                <input type="radio" name="card_type">
+                <em></em>
+              </label>
+              <label>
+                <img src="img/card_albali.svg" alt="">
+                <input type="radio" name="card_type">
+                <em></em>
+              </label>
+            </div>
             <ul>
               <li>
-                <span>Name</span>
+                <span>Card Number</span>
                 <div>
-                  <input type="text" value="Orkhan">
+                  <input type="text">
                 </div>
               </li>
               <li>
-                <span>surname</span>
+                <span>Cardholder Name</span>
                 <div>
-                  <input type="text" value="Hajiyev">
+                  <input type="text">
                 </div>
               </li>
               <li>
-                <span>Email address</span>
+                <span>End Date (mm/yy)</span>
                 <div>
-                  <input type="text" value="example@example.com">
-                </div>
-                <em>We’ll send your order confirmation here</em>
-              </li>
-              <li>
-                <span>Date of birth</span>
-                <div class="date">
                   <select name="" id="">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1834,70 +1854,26 @@
                     <option value="31">31</option>
                   </select>
                   <select name="" id="">
-                    <option value="January">January</option>
-                    <option value="Feburary">Feburary</option>
-                    <option value="March">March</option>
-                    <option value="Aprel">Aprel</option>
-                    <option value="May">May</option>
-                    <option value="June">June</option>
-                    <option value="Jule">Jule</option>
-                    <option value="August">August</option>
-                    <option value="September">September</option>
-                    <option value="October">October</option>
-                    <option value="November">November</option>
-                    <option value="December">December</option>
-                  </select>
-                  <select name="" id="">
-                    <option value="1980">1980</option>
-                    <option value="1981">1981</option>
-                    <option value="1982">1982</option>
-                    <option value="1983">1983</option>
-                    <option value="1984">1984</option>
-                    <option value="1985">1985</option>
-                    <option value="1986">1986</option>
-                    <option value="1987">1987</option>
-                    <option value="1988">1988</option>
-                    <option value="1989">1989</option>
-                    <option value="1990">1990</option>
-                    <option value="1991">1991</option>
-                    <option value="1992">1992</option>
-                    <option value="1993">1993</option>
-                    <option value="1994">1994</option>
-                    <option value="1995">1995</option>
-                    <option value="1996">1996</option>
-                    <option value="1997">1997</option>
-                    <option value="1998">1998</option>
-                    <option value="1999">1999</option>
-                  </select>
-                </div>
-                <em>Tell us – you'll get a birthday treat if you do</em>
-              </li>
-              <li>
-                <span>Gender</span>
-                <div>
-                  <select name="" id="">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
                   </select>
                 </div>
               </li>
               <li>
-                <span class="short">Current <br>password</span>
+                <span>CVC NUMBER</span>
                 <div>
-                  <input type="password" value="D#k2D!kd&">
+                  <input type="text" class="short">
+                  <em>Optional</em>
                 </div>
-                <em>We’ll send your order confirmation here</em>
-              </li>
-              <li>
-                <span>New password</span>
-                <div>
-                  <input type="password" value="">
-                </div>
-                <em>Must be 6 or more letters and contain at least 1 number</em>
               </li>
             </ul>
             <div class="submit">
-              <button type="submit">UPDATE</button>
+              <button type="submit">save changes</button>
             </div>
           </form>
         </div>

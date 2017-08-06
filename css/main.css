@@ -1200,6 +1200,114 @@ a.search_toggler {
   text-transform: uppercase;
 }
 
+.page_404 {
+  padding: 70px 0 0;
+}
+
+.page_404 > div {
+  padding: 50px 20px 100px;
+  background: #fff;
+  text-align: center;
+}
+
+.page_404 > div h2 {
+  padding: 0 0 0;
+  color: #669c25;
+  font-family: 'Roboto';
+  font-size: 200px;
+  font-weight: 900;
+  letter-spacing: -10px;
+}
+
+.page_404 > div h3 {
+  padding: 0 0 20px;
+  color: #669c25;
+  font-family: 'Roboto';
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.page_404 > div p {
+  color: #669c25;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -0.9px;
+}
+
+.page_404 > div p a {
+  text-decoration: underline;
+  color: #669c25;
+}
+
+.page_404 > div p a:hover {
+  text-decoration: none;
+}
+
+.page_success {
+  padding: 190px 20px;
+}
+
+.page_success > div {
+  text-align: center;
+}
+
+.page_success > div img {
+  display: inline-block;
+}
+
+.page_success > div h2 {
+  padding: 25px 0;
+  color: #363636;
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page_success > div p {
+  padding: 0 0 30px;
+  color: #878787;
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.page_success > div .links {
+  font-size: 0;
+}
+
+.page_success > div .links a {
+  display: inline-block;
+  height: 53px;
+  padding: 0 30px;
+  margin: 0 7px;
+  line-height: 53px;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Roboto';
+  vertical-align: top;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.page_success > div .links a.continue {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  background: #79b237;
+}
+
+.page_success > div .links a.back {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #333;
+}
+
 .quick_links {
   border-top: 1px solid #e2e2e2;
   background: #fff;
@@ -2095,6 +2203,109 @@ a.toggler em:first-child:first-child + em + em {
 
 .signin_modal > div:last-child .social_login ul li + li {
   float: right;
+}
+
+.comment_modal {
+  width: 1000px;
+  height: auto;
+  position: fixed;
+  top: -400px;
+  left: 50%;
+  margin: -270px 0 0 -500px;
+  background: #fff;
+  z-index: 1;
+  -webkit-animation-duration: 0.9s;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-animation-duration: 0.9s;
+  -moz-transition: all 0.9s ease-in-out;
+  animation-duration: 0.9s;
+  transition: all 0.9s ease-in-out;
+}
+
+.comment_modal.show_me {
+  top: 50%;
+}
+
+.comment_modal > div {
+  padding: 55px 40px;
+}
+
+.comment_modal > div h2 {
+  padding: 0 0 36px;
+  color: #525252;
+  font-family: 'Roboto';
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.comment_modal > div form {
+  display: block;
+}
+
+.comment_modal > div form ul li {
+  padding: 0 0 55px;
+}
+
+.comment_modal > div form ul li span {
+  display: block;
+  padding: 0 0 15px;
+  font-family: 'Roboto';
+  font-size: 20px;
+  letter-spacing: -0.78px;
+  color: #999;
+  font-weight: 500;
+}
+
+.comment_modal > div form ul li span sup {
+  padding: 0 0 0 10px;
+  color: #fb0007;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+.comment_modal > div form ul li input {
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding: 0 12px;
+  font-family: 'Roboto';
+  font-size: 20px;
+  letter-spacing: -0.78px;
+  border: 1px solid #979797;
+}
+
+.comment_modal > div form .submit {
+  padding: 15px 0 0;
+  overflow: hidden;
+}
+
+.comment_modal > div form .submit button {
+  display: block;
+  height: 53px;
+  float: right;
+  padding: 0 40px;
+  border: none;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #79b237;
+  cursor: pointer;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.comment_modal a.close {
+  display: block;
+  width: 26px;
+  height: 30px;
+  background: url(../img/close_black_icon.png) no-repeat 0 0;
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }
 
 .sign_back {
@@ -4995,6 +5206,125 @@ aside.aside_products article .old_price > strong {
 
 .account_edit > div .form form ul li {
   padding: 0 0 34px;
+  overflow: hidden;
+}
+
+.account_edit > div .form form ul li span {
+  display: block;
+  width: 170px;
+  float: left;
+  padding: 0 20px 0 0;
+  line-height: 70px;
+  text-align: right;
+  color: #999;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.account_edit > div .form form ul li span.short {
+  line-height: 21px;
+  padding: 15px 20px 0 0;
+}
+
+.account_edit > div .form form ul li > div {
+  width: 520px;
+  float: left;
+}
+
+.account_edit > div .form form ul li > div.date {
+  overflow: hidden;
+}
+
+.account_edit > div .form form ul li > div.date select {
+  float: left;
+}
+
+.account_edit > div .form form ul li > div.date select:first-child {
+  width: 23%;
+}
+
+.account_edit > div .form form ul li > div.date select:first-child + select {
+  width: 50%;
+  margin: 0 0 0 2%;
+}
+
+.account_edit > div .form form ul li > div.date select:first-child + select + select {
+  width: 23%;
+  margin: 0 0 0 2%;
+}
+
+.account_edit > div .form form ul li > div input {
+  display: block;
+  width: 100%;
+  height: 70px;
+  padding: 0 18px;
+  border: 1px solid #4a4a4a;
+  color: #363636;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  background: #fff;
+}
+
+.account_edit > div .form form ul li > div select {
+  display: block;
+  width: 100%;
+  height: 70px;
+  float: left;
+  padding: 0 15px;
+  border: 1px solid #4a4a4a;
+  color: #363636;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.38px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url(../img/select_big_pt.png) no-repeat 100% 50%;
+  cursor: pointer;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.account_edit > div .form form ul li em {
+  display: block;
+  width: 190px;
+  float: left;
+  padding: 0 0 0 30px;
+  color: #999;
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+}
+
+.account_edit > div .form form .submit {
+  width: 690px;
+  overflow: hidden;
+  padding: 6px 0 0;
+}
+
+.account_edit > div .form form .submit button {
+  display: block;
+  height: 42px;
+  float: right;
+  padding: 0 64px;
+  border: none;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  background: #363636;
 }
 
 .wallet_edit {
@@ -5375,6 +5705,182 @@ aside.aside_products article .old_price > strong {
 
 .table_orders table tbody tr td a:hover {
   text-decoration: none;
+}
+
+.add_payment_method {
+  max-width: 1040px;
+  padding: 48px 15px;
+  margin: 0 auto;
+}
+
+.add_payment_method > div {
+  padding: 15px 50px 50px;
+  background: #fff;
+}
+
+.add_payment_method > div h2 {
+  padding: 0 0 90px;
+  color: #363636;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.02px;
+  text-transform: uppercase;
+}
+
+.add_payment_method .form form {
+  display: block;
+}
+
+.add_payment_method .form form ul li {
+  padding: 0 0 34px;
+  overflow: hidden;
+}
+
+.add_payment_method .form form ul li span {
+  display: block;
+  width: 270px;
+  float: left;
+  padding: 0 20px 0 0;
+  line-height: 70px;
+  text-align: right;
+  color: #999;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.add_payment_method .form form ul li > div {
+  width: 520px;
+  float: left;
+  overflow: hidden;
+}
+
+.add_payment_method .form form ul li > div input {
+  display: block;
+  width: 100%;
+  height: 70px;
+  padding: 0 18px;
+  border: 1px solid #4a4a4a;
+  color: #363636;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  background: #fff;
+}
+
+.add_payment_method .form form ul li > div input.short {
+  width: 48%;
+  float: left;
+}
+
+.add_payment_method .form form ul li > div select {
+  display: block;
+  width: 48%;
+  height: 70px;
+  float: left;
+  padding: 0 15px;
+  border: 1px solid #4a4a4a;
+  color: #363636;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.38px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url(../img/select_big_pt.png) no-repeat 100% 50%;
+  cursor: pointer;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.add_payment_method .form form ul li > div select + select {
+  float: right;
+}
+
+.add_payment_method .form form ul li > div em {
+  display: block;
+  width: 48%;
+  float: right;
+  line-height: 70px;
+  color: #999;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+}
+
+.add_payment_method .form form .submit {
+  width: 790px;
+  overflow: hidden;
+  padding: 6px 0 0;
+}
+
+.add_payment_method .form form .submit button {
+  display: block;
+  height: 42px;
+  float: right;
+  padding: 0 22px;
+  border: none;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  background: #363636;
+  cursor: pointer;
+}
+
+.cards_select {
+  width: 520px;
+  margin: 0 0 0 270px;
+  overflow: hidden;
+}
+
+.cards_select label {
+  display: block;
+  width: 20%;
+  height: 120px;
+  float: left;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.cards_select label img {
+  display: inline-block;
+  width: 85px;
+}
+
+.cards_select label input {
+  display: none;
+}
+
+.cards_select label input:checked + em {
+  background: #fff;
+  border: 7px solid #669c25;
+}
+
+.cards_select label input + em {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #727272;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  margin: 0 0 0 -12px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border-radius: 50%;
 }
 
 .trend_searches {
