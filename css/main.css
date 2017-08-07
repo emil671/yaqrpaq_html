@@ -6439,6 +6439,7 @@ a.clear_filtre {
   margin: 0 0 0px;
   padding: 0 20px;
   float: left;
+  position: relative;
   -webkit-animation-duration: 0.2s;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-animation-duration: 0.2s;
@@ -6607,4 +6608,44 @@ a.clear_filtre {
 
 .currency_icon {
   font-family: 'JIS AZN';
+}
+
+.discount_i {
+  display: inline-block;
+  height: 26px;
+  padding: 0 5px;
+  line-height: 28px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.01px;
+  text-transform: uppercase;
+  background: #ff001f;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.new_i {
+  display: inline-block;
+  height: 26px;
+  padding: 0 5px;
+  line-height: 28px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.01px;
+  text-transform: uppercase;
+  background: #79b237;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
 }
