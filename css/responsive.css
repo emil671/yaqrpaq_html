@@ -442,6 +442,42 @@
     width: 100%;
     padding: 0 0 25px;
   }
+  .reviews_list article {
+    padding: 0 0 50px;
+  }
+  .reviews_list article .left_info {
+    position: static;
+    padding: 0 0 15px;
+  }
+  .reviews_list article .left_info h4 {
+    padding: 10px 0 10px;
+  }
+  .reviews_list article .left_info .rating {
+    position: absolute;
+    top: 11px;
+    right: 0;
+  }
+  .add_review_button a {
+    width: 100%;
+    text-align: center;
+  }
+  .comment_modal {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -100%;
+    margin: 0;
+  }
+  .comment_modal.show_me {
+    top: 0;
+  }
+  .comment_modal > div {
+    padding: 55px 20px;
+  }
+  .comment_modal > div form .submit button {
+    float: none;
+    width: 100%;
+  }
   /* Current product end */
   /* Basket begin */
   .basket_wrapper {
@@ -533,6 +569,204 @@
     padding: 5px 0 0;
   }
   /* Basket end */
+  /* Account edit begin */
+  .account_edit {
+    width: 100%;
+    padding: 0;
+  }
+  .account_edit > div {
+    padding: 25px 20px 50px;
+  }
+  .account_edit > div h2 {
+    padding: 0 0 40px;
+  }
+  .account_edit > div .form form ul li span {
+    float: none;
+    width: auto;
+    padding: 0 0 5px !important;
+    text-align: left;
+    line-height: 24px;
+  }
+  .account_edit > div .form form ul li span br {
+    display: none;
+  }
+  .account_edit > div .form form ul li em {
+    width: 100%;
+    padding: 0;
+    font-size: 13px;
+  }
+  .account_edit > div .form form ul li > div {
+    width: 100%;
+  }
+  .account_edit > div .form form ul li > div.date select {
+    width: 100% !important;
+    margin: 10px 0 0 !important;
+  }
+  .account_edit > div .form form ul li > div.date select:first-child {
+    margin: 0;
+  }
+  .account_edit > div .form form .submit {
+    width: 100%;
+  }
+  .account_edit > div .form form .submit button {
+    width: 100%;
+  }
+  /* Account edit end */
+  /* Address edit begin */
+  .address_edit {
+    width: 100%;
+    padding: 0;
+  }
+  .address_edit > div {
+    padding: 25px 20px 50px;
+  }
+  .address_edit > div header {
+    padding: 0 0 30px;
+  }
+  .address_edit > div header h2 {
+    padding: 0 0 10px;
+    float: none;
+  }
+  .address_edit > div header .link {
+    float: none;
+  }
+  .address_edit > div .form form ul li label span {
+    float: none;
+    width: auto;
+    padding: 0 0 5px !important;
+    text-align: left;
+    line-height: 24px;
+  }
+  .address_edit > div .form form ul li label em {
+    width: 100%;
+    padding: 0;
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .address_edit > div .form form ul li label input {
+    width: 100%;
+  }
+  .address_edit > div .form form .submit {
+    width: 100%;
+    padding: 0;
+  }
+  .address_edit > div .form form .submit button {
+    width: 100%;
+  }
+  /* Address edit end */
+  /* My account begin */
+  .my_account {
+    padding: 0;
+  }
+  .my_account > div {
+    padding: 20px 20px 50px;
+  }
+  .my_account > div section .button a {
+    width: 100%;
+    text-align: center;
+  }
+  /* My account end */
+  /* Wallet edit begin */
+  .wallet_edit {
+    padding: 0;
+  }
+  .wallet_edit > div {
+    padding: 25px 20px 50px;
+  }
+  .wallet_edit > div header {
+    padding: 0 0 30px;
+  }
+  .wallet_edit > div header h2 {
+    padding: 0 0 10px;
+    float: none;
+  }
+  .wallet_edit > div header .link {
+    float: none;
+  }
+  /* Wallet edit end */
+  /* Order history begin */
+  .order_history {
+    padding: 0;
+  }
+  .order_history > div {
+    padding: 25px 20px 50px;
+  }
+  /* Order history end */
+  /* Add payment begin */
+  .add_payment_method {
+    width: 100%;
+    padding: 0;
+  }
+  .add_payment_method > div {
+    padding: 25px 20px 50px;
+  }
+  .add_payment_method > div h2 {
+    padding: 0 0 60px;
+  }
+  .add_payment_method > div .form form ul li span {
+    width: 100%;
+    float: none;
+    text-align: left;
+    line-height: 21px;
+  }
+  .add_payment_method > div .form form ul li > div {
+    width: 100%;
+  }
+  .add_payment_method > div .form form .submit {
+    width: 100%;
+  }
+  .add_payment_method > div .form form .submit button {
+    width: 100%;
+  }
+  .cards_select {
+    width: 100%;
+    margin: 0;
+  }
+  .cards_select label img {
+    width: 80%;
+  }
+  /* Add payment end */
+  /* Favorites block begin */
+  .favorites_block h2 {
+    padding: 0 0 40px;
+  }
+  .favorites_list {
+    padding: 0;
+  }
+  .favorites_list article {
+    width: 100%;
+    height: auto;
+    padding: 20px 15px;
+  }
+  /* Favorites block end */
+  /* Page 404 begin */
+  .page_404 {
+    padding: 0;
+  }
+  .page_404 > div h2 {
+    font-size: 72px;
+    letter-spacing: -1px;
+  }
+  .page_404 > div h3 {
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+  .page_404 > div p {
+    font-size: 18px;
+  }
+  /* Page 404 end */
+  /* Page success begin */
+  .page_success {
+    padding: 40px 20px;
+  }
+  .page_success > div .links a {
+    width: 100%;
+    margin: 0;
+  }
+  .page_success > div .links a.continue {
+    margin: 0 0 10px;
+  }
+  /* Page success end */
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
@@ -832,6 +1066,13 @@
   aside.aside_products {
     display: none;
   }
+  .reviews_list article {
+    padding: 0 0 50px 160px;
+  }
+  .comment_modal {
+    width: 440px;
+    margin: -270px 0 0 -220px;
+  }
   /* Current product end */
   /* Basket begin */
   .basket_wrapper {
@@ -870,6 +1111,133 @@
     padding: 5px 0 0;
   }
   /* Basket end */
+  /* Account edit begin */
+  .account_edit {
+    width: 100%;
+    padding: 0;
+  }
+  .account_edit > div {
+    padding: 25px 20px 50px;
+  }
+  .account_edit > div h2 {
+    padding: 0 0 40px;
+  }
+  .account_edit > div .form form ul li span {
+    float: none;
+    width: auto;
+    padding: 0 0 5px !important;
+    text-align: left;
+    line-height: 24px;
+  }
+  .account_edit > div .form form ul li span br {
+    display: none;
+  }
+  .account_edit > div .form form ul li em {
+    width: 100%;
+    padding: 0;
+    font-size: 13px;
+  }
+  .account_edit > div .form form ul li > div {
+    width: 100%;
+  }
+  .account_edit > div .form form .submit {
+    width: 100%;
+  }
+  .account_edit > div .form form .submit button {
+    width: 100%;
+  }
+  /* Account edit end */
+  /* Address edit begin */
+  .address_edit {
+    width: 100%;
+  }
+  .address_edit > div header {
+    padding: 0 0 40px;
+  }
+  .address_edit > div .form form ul li label span {
+    float: none;
+    width: auto;
+    padding: 0 0 5px !important;
+    text-align: left;
+    line-height: 24px;
+  }
+  .address_edit > div .form form ul li label em {
+    width: 100%;
+    padding: 0;
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .address_edit > div .form form ul li label input {
+    width: 100%;
+  }
+  .address_edit > div .form form .submit {
+    width: 100%;
+    padding: 0;
+  }
+  .address_edit > div .form form .submit button {
+    width: 100%;
+  }
+  /* Address edit end */
+  /* My account begin */
+  .my_account > div {
+    padding: 20px 20px 50px;
+  }
+  /* My account end */
+  /* Wallet edit begin */
+  .wallet_edit > div {
+    padding: 20px 20px 50px;
+  }
+  /* Wallet edit end */
+  /* Order history begin */
+  .order_history > div {
+    padding: 20px 20px 50px;
+  }
+  /* Order history end */
+  /* Add payment begin */
+  .add_payment_method {
+    width: 100%;
+  }
+  .add_payment_method > div {
+    padding: 25px 20px 50px;
+  }
+  .add_payment_method > div h2 {
+    padding: 0 0 60px;
+  }
+  .add_payment_method > div .form form ul li span {
+    width: 100%;
+    float: none;
+    text-align: left;
+    line-height: 21px;
+  }
+  .add_payment_method > div .form form ul li > div {
+    width: 100%;
+  }
+  .add_payment_method > div .form form .submit {
+    width: 100%;
+  }
+  .add_payment_method > div .form form .submit button {
+    width: 100%;
+  }
+  .cards_select {
+    width: 100%;
+    margin: 0;
+  }
+  .cards_select label img {
+    width: 80%;
+  }
+  /* Add payment end */
+  /* Favorites block begin */
+  .favorites_block h2 {
+    padding: 0 0 40px;
+  }
+  .favorites_list {
+    padding: 0;
+  }
+  .favorites_list article {
+    width: 50%;
+    padding: 0 15px;
+  }
+  /* Favorites block end */
 }
 
 @media (min-width: 769px) and (max-width: 922px) {
@@ -1025,6 +1393,13 @@
   .product_buy_last .buttons {
     padding: 0 0 20px;
   }
+  .reviews_list article {
+    padding: 0 0 50px 150px;
+  }
+  .comment_modal {
+    width: 700px;
+    margin: -270px 0 0 -350px;
+  }
   /* Current product end */
   /* Basket begin */
   .basket_wrapper .right_side {
@@ -1034,6 +1409,108 @@
     width: 100%;
   }
   /* Basket end */
+  /* Account edit begin */
+  .account_edit {
+    width: 100%;
+  }
+  .account_edit > div h2 {
+    padding: 0 0 40px;
+  }
+  .account_edit > div .form form ul li span {
+    float: none;
+    width: auto;
+    padding: 0 0 5px !important;
+    text-align: left;
+    line-height: 24px;
+  }
+  .account_edit > div .form form ul li span br {
+    display: none;
+  }
+  .account_edit > div .form form ul li em {
+    width: 100%;
+    padding: 0;
+    font-size: 13px;
+  }
+  .account_edit > div .form form ul li > div {
+    width: 100%;
+  }
+  .account_edit > div .form form .submit {
+    width: 100%;
+  }
+  .account_edit > div .form form .submit button {
+    width: 100%;
+  }
+  /* Account edit end */
+  /* Address edit begin */
+  .address_edit {
+    width: 100%;
+  }
+  .address_edit > div header {
+    padding: 0 0 40px;
+  }
+  .address_edit > div .form form ul li label span {
+    float: none;
+    width: auto;
+    padding: 0 0 5px !important;
+    text-align: left;
+    line-height: 24px;
+  }
+  .address_edit > div .form form ul li label em {
+    width: 100%;
+    padding: 0;
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .address_edit > div .form form ul li label input {
+    width: 100%;
+  }
+  .address_edit > div .form form .submit {
+    width: 100%;
+    padding: 0;
+  }
+  .address_edit > div .form form .submit button {
+    width: 100%;
+  }
+  /* Address edit end */
+  /* Add payment begin */
+  .add_payment_method {
+    width: 100%;
+  }
+  .add_payment_method > div h2 {
+    padding: 0 0 60px;
+  }
+  .add_payment_method > div .form form ul li span {
+    width: 100%;
+    float: none;
+    text-align: left;
+    line-height: 21px;
+  }
+  .add_payment_method > div .form form ul li > div {
+    width: 100%;
+  }
+  .add_payment_method > div .form form .submit {
+    width: 100%;
+  }
+  .add_payment_method > div .form form .submit button {
+    width: 100%;
+  }
+  .cards_select {
+    width: 100%;
+    margin: 0;
+  }
+  /* Add payment end */
+  /* Favorites block begin */
+  .favorites_block h2 {
+    padding: 0 0 40px;
+  }
+  .favorites_list {
+    padding: 0;
+  }
+  .favorites_list article {
+    width: 25%;
+    padding: 0 15px;
+  }
+  /* Favorites block end */
 }
 
 @media (min-width: 922px) and (max-width: 1200px) {
@@ -1116,6 +1593,10 @@
   .product_buy_last .buttons {
     padding: 0 0 20px;
   }
+  .comment_modal {
+    width: 900px;
+    margin: -270px 0 0 -450px;
+  }
   /* Current product end */
   /* Basket begin */
   .basket_wrapper .right_side {
@@ -1134,4 +1615,65 @@
     padding: 5px 0 0;
   }
   /* Basket end */
+  /* Account edit begin */
+  .account_edit {
+    max-width: 880px;
+  }
+  .account_edit > div h2 {
+    padding: 0 0 40px;
+  }
+  .account_edit > div .form form ul li > div {
+    width: 390px;
+  }
+  .account_edit > div .form form ul li > div.date select:first-child {
+    width: 20%;
+  }
+  .account_edit > div .form form ul li > div.date select:first-child + select {
+    width: 50%;
+  }
+  .account_edit > div .form form ul li > div.date select:first-child + select + select {
+    width: 26%;
+  }
+  .account_edit > div .form form .submit {
+    width: 560px;
+  }
+  /* Account edit end */
+  /* Address edit begin */
+  .address_edit {
+    max-width: 880px;
+  }
+  .address_edit > div header {
+    padding: 0 0 40px;
+  }
+  .address_edit > div .form form ul li label input {
+    width: 450px;
+  }
+  /* Address edit end */
+  /* Add payment begin */
+  .add_payment_method {
+    max-width: 880px;
+  }
+  .add_payment_method > div h2 {
+    padding: 0 0 40px;
+  }
+  .add_payment_method > div .form form ul li span {
+    width: 230px;
+  }
+  .add_payment_method > div .form form ul li > div {
+    width: 520px;
+  }
+  .add_payment_method > div .form form .submit {
+    width: 750px;
+  }
+  .cards_select {
+    width: 100%;
+    margin: 0;
+  }
+  /* Add payment end */
+  /* Favorites block begin */
+  .favorites_list article {
+    width: 20%;
+    padding: 0 15px;
+  }
+  /* Favorites block end */
 }

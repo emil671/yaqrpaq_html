@@ -4566,7 +4566,7 @@ a.back_to_top.show_me {
   line-height: 30px;
 }
 
-.add_revirw_button a {
+.add_review_button a {
   display: inline-block;
   height: 53px;
   padding: 0 24px;
@@ -5015,7 +5015,7 @@ aside.aside_products article .old_price > strong {
   text-transform: uppercase;
 }
 
-.order_history > div .table h3 {
+.order_history > div h3 {
   text-align: center;
   padding: 0 0 15px;
   margin: 0 0 20px;
@@ -5024,6 +5024,10 @@ aside.aside_products article .old_price > strong {
   font-weight: 700;
   letter-spacing: 0.02px;
   border-bottom: 2px solid #979797;
+}
+
+.order_history > div .table {
+  overflow-y: auto;
 }
 
 .order_history > div .table table {
@@ -5036,6 +5040,7 @@ aside.aside_products article .old_price > strong {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.02px;
+  white-space: nowrap;
 }
 
 .order_history > div .table table tbody tr:nth-child(2n) td {
@@ -5051,6 +5056,7 @@ aside.aside_products article .old_price > strong {
   line-height: 25px;
   background: #e6e6e6;
   border-bottom: 4px solid #fff;
+  white-space: nowrap;
 }
 
 .order_history > div .table table tbody tr td a {
@@ -5178,6 +5184,7 @@ aside.aside_products article .old_price > strong {
   letter-spacing: 0.75px;
   text-transform: uppercase;
   background: #363636;
+  cursor: pointer;
 }
 
 .account_edit {
@@ -5325,6 +5332,7 @@ aside.aside_products article .old_price > strong {
   letter-spacing: 0.75px;
   text-transform: uppercase;
   background: #363636;
+  cursor: pointer;
 }
 
 .wallet_edit {
@@ -5370,7 +5378,7 @@ aside.aside_products article .old_price > strong {
   text-decoration: none;
 }
 
-.wallet_edit > div .table h3 {
+.wallet_edit > div h3 {
   text-align: center;
   padding: 0 0 15px;
   margin: 0 0 50px;
@@ -5379,6 +5387,10 @@ aside.aside_products article .old_price > strong {
   font-weight: 700;
   letter-spacing: 0.02px;
   border-bottom: 2px solid #979797;
+}
+
+.wallet_edit > div .table {
+  overflow-y: auto;
 }
 
 .wallet_edit > div .table table {
@@ -5394,6 +5406,7 @@ aside.aside_products article .old_price > strong {
   text-transform: uppercase;
   border-top: 1px solid #979797;
   border-left: 1px solid #979797;
+  white-space: nowrap;
 }
 
 .wallet_edit > div .table table thead tr td:last-child {
@@ -5414,6 +5427,7 @@ aside.aside_products article .old_price > strong {
   border-top: 1px solid #979797;
   border-left: 1px solid #979797;
   position: relative;
+  white-space: nowrap;
 }
 
 .wallet_edit > div .table table tbody tr td:last-child {
@@ -5586,6 +5600,10 @@ aside.aside_products article .old_price > strong {
   padding: 0 0 6px;
 }
 
+.table_address {
+  overflow-y: auto;
+}
+
 .table_address table {
   width: 100%;
 }
@@ -5599,6 +5617,7 @@ aside.aside_products article .old_price > strong {
   text-transform: uppercase;
   border-top: 1px solid #979797;
   border-left: 1px solid #979797;
+  white-space: nowrap;
 }
 
 .table_address table thead tr td:last-child {
@@ -5624,6 +5643,7 @@ aside.aside_products article .old_price > strong {
   border-top: 1px solid #979797;
   border-left: 1px solid #979797;
   position: relative;
+  white-space: nowrap;
 }
 
 .table_address table tbody tr td:first-child {
@@ -5672,6 +5692,10 @@ aside.aside_products article .old_price > strong {
   border-radius: 50%;
 }
 
+.table_orders {
+  overflow-y: auto;
+}
+
 .table_orders table {
   width: 100%;
 }
@@ -5682,6 +5706,7 @@ aside.aside_products article .old_price > strong {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.02px;
+  white-space: nowrap;
 }
 
 .table_orders table tbody tr:nth-child(2n) td {
@@ -5697,6 +5722,7 @@ aside.aside_products article .old_price > strong {
   line-height: 25px;
   background: #e6e6e6;
   border-bottom: 4px solid #fff;
+  white-space: nowrap;
 }
 
 .table_orders table tbody tr td a {

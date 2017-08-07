@@ -1081,7 +1081,7 @@ a.search_toggler {
         text-decoration: none;
         color: #fff;
         font-family: 'Roboto';
-        vertical-align: top;
+        vertical-align: top;  
         @include border_radius(4px);
         &.continue {
           font-size: 22px;
@@ -3855,7 +3855,7 @@ a.back_to_top {
   }
 }
 
-.add_revirw_button {
+.add_review_button {
   a {
     display: inline-block;
     height: 53px;
@@ -4243,17 +4243,18 @@ aside.aside_products {
       letter-spacing: 0.02px;
       text-transform: uppercase;
     }
+    h3 {
+      text-align: center;
+      padding: 0 0 15px;
+      margin: 0 0 20px;
+      color: #2d2d2d;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.02px;
+      border-bottom: 2px solid #979797;
+    }
     .table {
-      h3 {
-        text-align: center;
-        padding: 0 0 15px;
-        margin: 0 0 20px;
-        color: #2d2d2d;
-        font-size: 18px;
-        font-weight: 700;
-        letter-spacing: 0.02px;
-        border-bottom: 2px solid #979797;
-      }
+      overflow-y: auto;
       table {
         width: 100%;
         thead {
@@ -4264,6 +4265,7 @@ aside.aside_products {
               font-size: 18px;
               font-weight: 700;
               letter-spacing: 0.02px;
+              white-space: nowrap;
             }
           }
         }
@@ -4281,6 +4283,7 @@ aside.aside_products {
               line-height: 25px;
               background: #e6e6e6;
               border-bottom: 4px solid #fff;
+              white-space: nowrap;
               a {
                 color: #2d2d2d;
                 &:hover {
@@ -4397,6 +4400,7 @@ aside.aside_products {
             letter-spacing: 0.75px;
             text-transform: uppercase;
             background: #363636;
+            cursor: pointer;
           }
         }
       }
@@ -4528,6 +4532,7 @@ aside.aside_products {
             letter-spacing: 0.75px;
             text-transform: uppercase;
             background: #363636;
+            cursor: pointer;
           }
         }
       }
@@ -4569,17 +4574,18 @@ aside.aside_products {
         }
       }
     }
+    h3 {
+      text-align: center;
+      padding: 0 0 15px;
+      margin: 0 0 50px;
+      color: #2d2d2d;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.02px;
+      border-bottom: 2px solid #979797;
+    }
     .table {
-      h3 {
-        text-align: center;
-        padding: 0 0 15px;
-        margin: 0 0 50px;
-        color: #2d2d2d;
-        font-size: 18px;
-        font-weight: 700;
-        letter-spacing: 0.02px;
-        border-bottom: 2px solid #979797;
-      }
+      overflow-y: auto;
       table {
         width: 100%;
         thead {
@@ -4593,6 +4599,7 @@ aside.aside_products {
               text-transform: uppercase;
               border-top: 1px solid #979797;
               border-left: 1px solid #979797;
+              white-space: nowrap;
               &:last-child {
                 border-right: 1px solid #979797;
               }
@@ -4616,6 +4623,7 @@ aside.aside_products {
               border-top: 1px solid #979797;
               border-left: 1px solid #979797;
               position: relative;
+              white-space: nowrap;
               &:last-child {
                 border-right: 1px solid #979797;
               }
@@ -4770,6 +4778,7 @@ aside.aside_products {
 }
 
 .table_address {
+  overflow-y: auto;
   table {
     width: 100%;
     thead {
@@ -4783,6 +4792,7 @@ aside.aside_products {
           text-transform: uppercase;
           border-top: 1px solid #979797;
           border-left: 1px solid #979797;
+          white-space: nowrap;
           &:last-child {
             width: 10%;
           }
@@ -4810,6 +4820,7 @@ aside.aside_products {
           border-top: 1px solid #979797;
           border-left: 1px solid #979797;
           position: relative;
+          white-space: nowrap;
           &:first-child {
             text-align: center;
             img {
@@ -4853,6 +4864,7 @@ aside.aside_products {
 }
 
 .table_orders {
+  overflow-y: auto;
   table {
     width: 100%;
     thead {
@@ -4863,6 +4875,7 @@ aside.aside_products {
           font-size: 18px;
           font-weight: 700;
           letter-spacing: 0.02px;
+          white-space: nowrap;
         }
       }
     }
@@ -4880,6 +4893,7 @@ aside.aside_products {
           line-height: 25px;
           background: #e6e6e6;
           border-bottom: 4px solid #fff;
+          white-space: nowrap;
           a {
             color: #2d2d2d;
             &:hover {
