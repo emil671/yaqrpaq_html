@@ -421,6 +421,7 @@
       .image {
         height: 450px;
         width: 100%;
+        margin: 0;
         line-height: 450px;
       }
     }
@@ -1170,7 +1171,8 @@
       width: 100%;
       position: static;
       .image {
-        width: 100%;
+        width: 80%;
+        margin: 0 0 0 20%;
       }
     }
     .product_buy_last {
@@ -1553,7 +1555,8 @@
       width: 100%;
       position: static;
       .image {
-        width: 100%;
+        width: 85%;
+        margin: 0 0 0 15%;
       }
     }
     .product_buy_last {
@@ -1790,7 +1793,11 @@
     .priduct_gallery {
       width: 450px;
       .image {
-        width: 450px;
+        width: 360px;
+        margin: 0 0 0 80px;
+      }
+      .thumbnails {
+        left: 10px;
       }
     }
     .product_buy_last {
