@@ -859,8 +859,10 @@ a.search_toggler {
           left: 0;
         }
         .image {
-          height: 215px;
-          line-height: 215px;
+          height: 200px;
+          line-height: 200px;
+          margin: 0 0 15px;
+          overflow: hidden;
           img {
             vertical-align: middle;
             max-width: 100%;
