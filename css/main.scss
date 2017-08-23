@@ -50,6 +50,7 @@ body {
 
 .main_wrapper {
   width: 100%;
+      left: 0;
   @include animate_go(0.6s);
 }
 
