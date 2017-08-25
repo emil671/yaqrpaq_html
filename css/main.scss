@@ -55,7 +55,7 @@ body {
 }
 
 header#header {
-  height: auto;
+  height: 110px;
   position: relative;
   z-index: 1;
   @include animate_go(0.6s);
@@ -248,6 +248,13 @@ header#header {
   }
   .second {
     background: #79b237;
+    &.fix {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      //z-index: 9;
+    }
     > div {
       max-width: 1440px;
       height: 75px;
@@ -1263,6 +1270,13 @@ a.search_toggler {
       font-size: 12px;
       font-weight: 400;
       letter-spacing: -0.26px;
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
     select {
       display: block;
@@ -4696,6 +4710,52 @@ aside.aside_products {
             }
           }
         }
+        .confirm {
+          padding: 0 0 20px 170px;
+          label {
+            display: block;
+            position: relative;
+            padding: 0 0 0 28px;
+            cursor: pointer;
+            b {
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              input {
+                display: none;
+                &:checked + em::after {
+                  content: "";
+                  display: block;
+                  width: 12px;
+                  height: 12px;
+                  background: #363636;
+                  position: absolute;
+                  top: 3px;
+                  left: 3px;
+                  @include border_radius(3px);
+                }
+                & + em {
+                  display: block;
+                  width: 20px;
+                  height: 20px;
+                  border: 1px solid #727272;
+                  background: #fff;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  margin: -10px 0 0 -10px;
+                  @include border_radius(4px);
+                }
+              }
+            }
+            span {
+              font-size: 14px;
+              line-height: 21px;
+            }
+          }
+        }
         .submit {
           width: 690px;
           overflow: hidden;
@@ -5732,6 +5792,8 @@ a.clear_filtre {
       padding: 0 0 20px;
       color: #666;
       font-size: 14px;
+      max-height: 67px;
+      overflow: hidden;
       line-height: 21px;
       font-weight: 400;
       letter-spacing: 0.01px;
