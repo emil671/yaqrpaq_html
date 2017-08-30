@@ -3961,14 +3961,16 @@ a.back_to_top {
           display: block;
           height: 50px;
           line-height: 50px;
-          color: #525252;
+          color: #999999;
           font-family: 'Roboto';
           font-size: 20px;
           text-decoration: none;
           font-weight: 500;
           letter-spacing: -0.78px;
           &.active, &:hover {
-            border-bottom: 2px solid #ff0000;
+            border-bottom: 3px solid #ff0000;
+            color: #525252;
+            font-weight: 500;
           }
         }
       }
@@ -4242,6 +4244,7 @@ aside.aside_products {
     margin: 0 0 10px;
     padding: 0 20px;
     background: #fff;
+    position: relative;
     @include animate_go(0.2s);
     &:hover {
       -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
@@ -5909,7 +5912,7 @@ a.clear_filtre {
 }
 
 .more_products {
-  height: 75px;
+  height: auto;
   padding: 15px 0 0;
   text-align: center;
   clear: both;
@@ -5966,4 +5969,11 @@ a.clear_filtre {
   top: 15px;
   left: 15px;
   @include border_radius(4px);
+}
+
+.pagination {
+  padding: 0 0 10px;
+  li {
+    padding: 0 0 3px;
+  }  
 }
