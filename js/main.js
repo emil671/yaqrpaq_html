@@ -269,6 +269,17 @@ setTimeout( function() {
 	});
 
 
+	// Last nav
+	$(".categories_list > ul > li > div article h3 a").click(function(){
+		if (isMobile) {
+			if ($(this).parent().next().find("li").length == 0) {
+				location.href = $(this).attr("href");
+
+			}
+		}
+	});
+
+
 
 /* Full nav end */
 
@@ -723,17 +734,25 @@ $(".priduct_gallery .thumbnails li a").click(function(){
 
     var top_pos = document.documentElement.scrollTop||document.body.scrollTop;
     if (top_pos > 35) {
-        $("header#header .second").addClass("fix");
+    	if (isMobile) {} else {
+        	$("header#header .second").addClass("fix");
+    	}
     } else {
-        $("header#header .second").removeClass("fix");
+    	if (isMobile) {} else {
+        	$("header#header .second").removeClass("fix");
+    	}
     }
 
     $(window).scroll(function() {
         var top_pos = document.documentElement.scrollTop||document.body.scrollTop;
         if (top_pos > 35) {
-            $("header#header .second").addClass("fix");
+    		if (isMobile) {} else {
+            	$("header#header .second").addClass("fix");
+    		}
         } else {
-            $("header#header .second").removeClass("fix");
+    		if (isMobile) {} else {
+            	$("header#header .second").removeClass("fix");
+    		}
         }
     });
 

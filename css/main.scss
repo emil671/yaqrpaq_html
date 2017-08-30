@@ -57,7 +57,7 @@ body {
 header#header {
   height: 110px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   @include animate_go(0.6s);
   .first {
     background: #659c24;
@@ -294,6 +294,7 @@ a.search_toggler {
 .nav_trigger {
   float: left;
   padding: 0 0 0;
+
   @include animate_go(0.3s);
   &.active {
     padding: 16px 0 0;
@@ -357,8 +358,8 @@ a.search_toggler {
 
 .head_search {
   width: 100%;
-
-  padding: 16px 300px 16px 350px;
+  height: 0;
+  padding: 16px 300px 0 350px;
   position: absolute;
   a.close {
     display: none;
@@ -1492,6 +1493,7 @@ a.search_toggler {
             font-weight: 400;
             text-decoration: none;
             letter-spacing: 0.02px;
+            position: relative;
             @include border_radius(2px);
             &:hover, &.active {
               padding: 8px 12px 8px 9px;
@@ -1499,6 +1501,23 @@ a.search_toggler {
               border-right: 0;
               border-left: 5px solid #669c25;
               background: #fafafa;
+              &::after {
+                @include transformer(0deg);
+              }
+            }
+            &::after {
+              content: "";
+              display: none;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 8px 5px 0 5px;
+              border-color: #669c25 transparent transparent transparent;
+              position: absolute;
+              top: 12px;
+              right: 12px;
+              @include transformer(-90deg);
+              @include animate_go(0.3s);
             }
           }
           > div {
