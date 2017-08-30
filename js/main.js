@@ -161,6 +161,8 @@ setTimeout( function() {
     }
 }, 300);
 
+
+
 /* Index slider end */
 
 
@@ -273,7 +275,7 @@ setTimeout( function() {
 
 
 /* Adaptive JS begin */
-	
+	/*
 	var _logo_width = $("header#header .second > div h1.logo").width(),
 	_nav_trigger_width = $(".nav_trigger").width(),
 	_sign_link_width = $(".sign_link").width(),
@@ -300,7 +302,7 @@ setTimeout( function() {
 		}
 
 		$(".head_search").css("width", _search_width+"px");
-	});
+	}); */
 
 /* Adaptive JS end */
 
