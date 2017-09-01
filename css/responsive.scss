@@ -152,8 +152,8 @@
         > div {
           height: 160px;
           img {
-            width: 640px;
-            margin: 0 0 0 -320px;
+            width: 100%;
+            margin: 0 0 0 -50%;
           }
         }
       }
@@ -330,6 +330,9 @@
     }
     .product_block {
       padding: 0;
+      > header {
+        display: none;
+      }
       header {
         .first_info {
           .rating {
@@ -1035,8 +1038,8 @@
         > div {
           height: 320px;
           img {
-            width: 1280px;
-            margin: 0 0 0 -640px;
+            width: 100%;
+            margin: 0 0 0 -50%;
           }
         }
       }
@@ -1148,8 +1151,8 @@
     .product_header_mobile {
       display: block;
     }
-    .product_block header {
-
+    .product_block > header {
+      display: none;
     }
     .product_list_wrapper {
       padding: 0;
@@ -1530,11 +1533,11 @@
 
   /* Index slider begin */
     #index_slider {
-      height: 240px;
+      height: 320px;
       .image {
-        height: 240px;
+        height: 320px;
         > div {
-          height: 240px;
+          height: 320px;
           img {
             width: 1280px;
             margin: 0 0 0 -640px;
