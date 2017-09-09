@@ -1635,6 +1635,12 @@ a.search_toggler {
   position: absolute;
   top: 20px;
   right: 10px;
+  ul {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
 }
 
 a.toggler {
@@ -5979,4 +5985,34 @@ a.clear_filtre {
   li {
     padding: 0 0 3px;
   }  
+}
+
+.table_scroll {
+  width: 100%;
+  overflow-x: auto;
+  table {
+    width: 100% !important;
+    min-width: 980px;
+    tr {
+      &:first-child {
+        td {
+          border-top: 1px solid #808080;
+        }
+      }
+      td {
+        padding: 10px 10px;
+        border: 1px solid #808080;
+        border-top: none;
+        border-left: none;
+        font-size: 18px;
+        &:first-child {
+          border-left: 1px solid #808080;
+        }
+        p {
+          padding: 0;
+          color: #000;
+        }
+      }
+    }
+  }
 }
