@@ -687,6 +687,10 @@ $(".priduct_gallery .thumbnails li a").click(function(){
 	_slider_visible_steps = 5,
 	_slider_lenght = $(".priduct_gallery .thumbnails img").length;
 
+	if (_window.width() < 481) {
+		_slider_visible_steps = 3;
+	}
+
 	$(".priduct_gallery .thumbnails .arrows a").click(function(){
 		var _this = $(this);
 
