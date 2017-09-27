@@ -605,6 +605,18 @@ $(".priduct_gallery .thumbnails li a").click(function(){
         src = _this.attr("href"),
         _this_index = _this.parent().index(),
         previous = $(".priduct_gallery .thumbnails li a.active").parent().index();
+
+        var _this_top = (_this.offset().top - $(".priduct_gallery .thumbnails").offset().top);
+        console.log(_this_top);
+
+        if (_this_top == 0) {
+        	$(".priduct_gallery .thumbnails .arrows a.prev").click();
+        }
+
+        if (_this_top == $(".priduct_gallery .thumbnails .swipe").height()-60) {
+        	$(".priduct_gallery .thumbnails .arrows a.next").click();
+        }
+
         if (_this.hasClass("video")) {
 	        if (_this.hasClass("active")) {} else {
 	        	if($(".priduct_gallery").hasClass("preload")) {} else {
@@ -670,6 +682,38 @@ $(".priduct_gallery .thumbnails li a").click(function(){
         return false;
     });
 
+	var _slider_step = 0,
+	_slider_step_height = 70,
+	_slider_visible_steps = 5,
+	_slider_lenght = $(".priduct_gallery .thumbnails li").length;
+
+	$(".priduct_gallery .thumbnails .arrows a").click(function(){
+		var _this = $(this);
+
+		$(".priduct_gallery .thumbnails .arrows a").removeClass("unactive");
+
+		if (_this.hasClass("prev")) {
+			_slider_step++;
+			if (_slider_step > 0) {
+				_slider_step = 0;
+			}
+			if (_slider_step == 0) {
+				$(".priduct_gallery .thumbnails .arrows a.prev").addClass("unactive");
+			}
+		} else {
+			_slider_step--;
+			if (_slider_step < -(_slider_lenght-_slider_visible_steps)) {
+				_slider_step = -(_slider_lenght-_slider_visible_steps);
+			}
+			if (_slider_step < -(_slider_lenght-_slider_visible_steps)+1) {
+				$(".priduct_gallery .thumbnails .arrows a.next").addClass("unactive");
+			}
+		}
+
+		$(".priduct_gallery .thumbnails ul").css("top", (_slider_step*_slider_step_height)+"px");
+
+		return false;
+	});
 
 
 /* Product gallery end */
@@ -774,5 +818,6 @@ $(".priduct_gallery .thumbnails li a").click(function(){
 
 /* Scroll table begin */
 	$(".info-block table").wrap('<div class="table_scroll"/></div>'); 
-
 /* Scroll table end */
+
+

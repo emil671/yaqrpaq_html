@@ -2588,6 +2588,57 @@ a.back_to_top.show_me {
   left: 20px;
 }
 
+.priduct_gallery .thumbnails .swipe {
+  width: 60px;
+  height: 340px;
+  overflow: hidden;
+  position: relative;
+}
+
+.priduct_gallery .thumbnails .arrows a {
+  display: block;
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+}
+
+.priduct_gallery .thumbnails .arrows a.unactive {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.priduct_gallery .thumbnails .arrows a.prev {
+  top: -30px;
+  background: url(../img/vertical_arrow.svg) no-repeat 50%;
+  -moz-transform: rotate(180deg);
+  /* Для Firefox */
+  -ms-transform: rotate(180deg);
+  /* Для IE */
+  -webkit-transform: rotate(180deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(180deg);
+  /* Для Opera */
+  transform: rotate(180deg);
+}
+
+.priduct_gallery .thumbnails .arrows a.next {
+  bottom: -30px;
+  background: url(../img/vertical_arrow.svg) no-repeat 50%;
+}
+
+.priduct_gallery .thumbnails ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation-duration: 0.3s;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-animation-duration: 0.3s;
+  -moz-transition: all 0.3s ease-in-out;
+  animation-duration: 0.3s;
+  transition: all 0.3s ease-in-out;
+}
+
 .priduct_gallery .thumbnails ul li {
   padding: 0 0 10px;
 }

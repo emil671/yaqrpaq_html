@@ -451,6 +451,12 @@
         margin: 0;
         line-height: 360px;
       }
+      .thumbnails {
+        top: 100px;
+        .swipe {
+          height: 200px;
+        }
+      }
     }
     .product_first_info {
       .left_info {
